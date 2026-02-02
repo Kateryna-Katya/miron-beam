@@ -1117,7 +1117,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .pages h1 { font-size: 2.2rem; }
+  .pages h1 { font-size: 2.0rem; }
   .pages { padding-top: 120px; }
 }
 /* Contact Page Specific Styles */
