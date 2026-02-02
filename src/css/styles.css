@@ -1120,3 +1120,68 @@ ul {
   .pages h1 { font-size: 2.2rem; }
   .pages { padding-top: 120px; }
 }
+/* Contact Page Specific Styles */
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.contact-method {
+  background: var(--color-surface);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: var(--transition);
+}
+
+.contact-method:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-5px);
+}
+
+.contact-method__icon {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  background: rgba(0, 255, 209, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-method__info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.contact-method__info p {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.contact-method__info span {
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+}
+
+.contact-page-cta {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-method {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+}
